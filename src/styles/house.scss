@@ -1,0 +1,121 @@
+@import url('../../node_modules/bootstrap/dist/css/bootstrap.min.css');
+$icon-font-path: '/fonts/';
+
+$blue-color: rgba(72,157,232,1);
+$shadow-color: rgba(100,100,100,1);
+$white-color: rgba(255,255,255,1);
+$grey-color: rgba(220,220,220,1);
+
+@font-face {
+  font-family: roboto;
+  src: url('./fonts/Roboto-Light.ttf');
+}
+
+body,
+html,
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'roboto', sans-serif;
+}
+
+header {
+  background: $blue-color;
+  box-shadow: 1px 1px 15px $shadow-color;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+
+    &:before,
+    &:after {
+      content: none;
+    }
+
+    p {
+      color: $white-color;
+      font-size: 30px;
+    }
+
+    a {
+      color: $white-color;
+
+      &:hover {
+        color: $grey-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 30px;
+  .col-xs-3 {
+    background: $grey-color;
+    padding: 10px;
+
+    ul {
+      list-style: none;
+    }
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+  header {
+    .container {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  main {
+
+    p {
+      font-size: 16px;
+    }
+
+    .col-xs-3 {
+      ul {
+        list-style: square;
+        padding-left: 8px;
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .col-xs-9 {
+      padding-right: 0;
+    }
+
+    .carousel-caption {
+      padding: 0;
+
+      h3 {
+        font-size: 12px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  iframe,
+  .modal-content {
+    width: 400px;
+    height: 250px;
+  }
+}

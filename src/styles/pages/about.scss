@@ -1,0 +1,25 @@
+main.about {
+
+  .col-sm-2 {
+   background: $blue-color;
+  }
+
+  .col-sm-9 {
+
+    h4:first-of-type {
+      margin-top: 0;
+    }
+
+    :nth-child(2) {
+      margin-top: 40px;
+    }
+
+    :nth-child(4) {
+      padding-top: 20px;
+    }
+
+    p:nth-child(even) {
+      padding-bottom: 15px;
+    }
+  }
+}

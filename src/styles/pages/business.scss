@@ -1,0 +1,13 @@
+main.business {
+
+  .col-sm-2 {
+   background: $blue-color;
+  }
+
+  .col-sm-9 {
+    small {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}

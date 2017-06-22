@@ -1,0 +1,54 @@
+<main class="contact">
+  <div class="col-xs-12 col-sm-2">
+    <p>Contact</p>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-sm-offset-1">
+    <h4>
+      Have a Project you would like to discuss with us?
+    </h4>
+
+    <form action="/contact-submit" method="post" class="col-xs-12 col-sm-7">
+      <div class="form-group">
+        <label for="fname">First Name</label>
+        {{#if data.fname}}
+          <input type="text" class="form-control" id="fname" name="quote[fname]" value={{data.fname}}>
+        {{else}}
+          <input type="text" class="form-control" id="fname" name="quote[fname]">
+        {{/if}}
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        {{#if data.lname}}
+          <input type="text" class="form-control" id="lname" name="quote[lname]" value={{data.lname}}>
+        {{else}}
+          <input type="text" class="form-control" id="lname" name="quote[lname]">
+        {{/if}}
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        {{#if data.email}}
+          <input type="email" class="form-control" id="email" name="quote[email]" value={{data.email}}>
+        {{else}}
+          <input type="email" class="form-control" id="email" name="quote[email]">
+        {{/if}}
+        <small>We will not share your info with anyone!</small>
+      </div>
+      <div class="form-group">
+        <label for="description">A short description of your project</label>
+        {{#if data.desc}}
+          <textarea name="quote[desc]" class="form-control" id="description" cols="30" rows="5">{{data.desc}}</textarea>
+        {{else}}
+          <textarea name="quote[desc]" class="form-control" id="description" cols="30" rows="5"></textarea>
+        {{/if}}
+      </div>
+      <button type="submit">submit</button>
+      {{#if error}}
+        <div class="error">{{error}}</div>
+      {{/if}}
+      {{#if success}}
+        <div class="success">{{success}}</div>
+      {{/if}}
+      <div class="g-recaptcha" data-sitekey="6LeEyAoUAAAAAE9Q2bEH_OvvcacIsDs3uBblmyZ2" data-theme="dark"></div>
+    </form>
+  </div>
+</main>

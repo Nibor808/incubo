@@ -1,0 +1,24 @@
+main.resources {
+
+  .col-sm-2 {
+    background: $green-color;
+  }
+
+  .col-sm-9 {
+
+    p:nth-child(4) {
+      margin-bottom: 30px;
+    }
+
+    section {
+      h4,
+      a {
+        font-family: 'roboto', sans-serif;
+      }
+
+      h4 {
+        text-decoration: underline;
+      }
+    }
+  }
+}

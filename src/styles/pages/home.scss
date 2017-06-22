@@ -1,0 +1,171 @@
+
+main.home {
+
+   h1, h4 {
+    font-family: 'quick', sans-serif;
+  }
+
+  .top {
+    .col-xs-6 {
+      border-top: 1px;
+      border-right: 0;
+      border-left: 1px;
+      border-bottom: 1px;
+      border-style: solid;
+      border-color: $black-color;
+    }
+    .col-xs-12 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: 0;
+      border-right: 0;
+      border-left: 1px;
+      border-bottom: 1px;
+      border-style: solid;
+      border-color: $black-color;
+    }
+  }
+
+  .middle {
+    .col-xs-6 {
+      border: 0;
+    }
+    .col-xs-12 {
+      border-top: 0;
+      border-right: 1px;
+      border-left: 1px;
+      border-bottom: 0;
+      border-style: solid;
+      border-color: $black-color;
+    }
+  }
+
+  .bottom {
+    .col-xs-6 {
+      border-top: 1px;
+      border-right: 0;
+      border-left: 1px;
+      border-bottom: 0;
+      border-style: solid;
+      border-color: $black-color;
+    }
+    .col-xs-3 {
+      border-top: 1px;
+      border-right: 1px;
+      border-left: 0;
+      border-bottom: 0;
+      border-style: solid;
+      border-color: $black-color;
+    }
+  }
+
+  .col-xs-6 {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+     p {
+      font-family: quick, sans-serif;
+      font-size: 18px;
+    }
+
+    a {
+      color: $white-color;
+
+      &:hover {
+      color: $blue-color;
+      }
+    }
+
+    h4 {
+      margin-top: 40px;
+    }
+  }
+
+  .col-xs-3,
+  .col-xs-12 {
+    height: 200px;
+  }
+
+  .keyboard-img {
+    background: url('../images/incubo/webdev-img.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  .contact-img {
+    background: url('../images/incubo/contact.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  .blue,
+  .yellow,
+  .green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blue {
+    background-color: $blue-color;
+    @include hover-gray(100%);
+
+    &:hover {
+      @include hover-gray(0);
+      @include shadow-text();
+
+      p {
+        color: $white-color;
+      }
+    }
+
+    p {
+      font-size: 40px;
+      font-family: 'roboto', sans-serif;
+      color: $white-opac;
+    }
+  }
+
+  .yellow {
+    background: $yellow-color;
+    @include hover-gray(100%);
+
+    &:hover {
+      @include hover-gray(0);
+      @include shadow-text();
+
+      p {
+        color: $white-color;
+      }
+    }
+
+    p {
+      font-size: 40px;
+      font-family: 'roboto', sans-serif;
+      color: $white-opac;
+    }
+  }
+
+  .green {
+    background: $green-color;
+    @include hover-gray(100%);
+
+    &:hover {
+      @include hover-gray(0);
+      @include shadow-text();
+
+      p {
+        color: $white-color;
+      }
+    }
+
+    p {
+      font-size: 40px;
+      font-family: 'roboto', sans-serif;
+      color: $white-opac;
+    }
+  }
+}

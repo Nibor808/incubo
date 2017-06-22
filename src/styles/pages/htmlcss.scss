@@ -1,0 +1,14 @@
+main.htmlcssjs {
+
+  .col-sm-2 {
+    flex-direction: column;
+    background: $blue-color;
+  }
+
+  .col-sm-9 {
+
+    h4 {
+      margin-top: 0;
+    }
+  }
+}

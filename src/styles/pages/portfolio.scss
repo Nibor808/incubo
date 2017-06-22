@@ -1,0 +1,24 @@
+main.portfolio {
+
+  .col-sm-2 {
+   background: $yellow-color;
+  }
+
+  .col-xs-4 {
+    padding: 0 5px 0 5px;
+  }
+
+  .col-sm-9 {
+
+    img {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+
+  .col-sm-9:last-of-type {
+    img {
+      padding-right: 5px;
+    }
+  }
+}

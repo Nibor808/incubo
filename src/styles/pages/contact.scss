@@ -1,0 +1,59 @@
+main.contact {
+
+  .col-sm-2 {
+   background: $blue-color;
+  }
+
+  .col-sm-9 {
+
+    form {
+      margin-top: 20px;
+    }
+
+    input,
+    textarea {
+      border: 0;
+      color: $white-opac;
+      font-family: roboto, sans-serif;
+      outline-color: $blue-color;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    label,
+    small {
+      font-family: 'roboto', sans-serif;
+    }
+
+    .form-control {
+      border-radius: 0;
+      background: $black-color;
+    }
+
+    button {
+      background: $blue-color;
+      border: 0;
+      color: $white-opac;
+
+      &:hover {
+        color: $white-color;
+      }
+    }
+
+    .g-recaptcha {
+      margin-top: 15px;
+    }
+
+    .error {
+      font-family: 'roboto', sans-serif;
+      color: red;
+    }
+
+    .success {
+      font-family: 'roboto', sans-serif;
+      color: green;
+    }
+  }
+}
